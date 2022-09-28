@@ -1,0 +1,70 @@
+#titulo{
+    margin-top: 0px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+.botao{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#start,#record{
+    display: inline-block;
+    line-height: 1px;
+    align-self: center;
+    height: 30px;
+    width: 300px;
+    background: darkcyan;
+    color: white;
+    border-radius: 7px;
+    margin: auto;
+    font-size: 24px;
+}
+#tabuleiro{
+    margin: auto;
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 1px;
+}
+#jogo{
+    display: flex;
+}
+.carta{
+    transform-style: preserve-3d;
+    width: 374px;
+    height: 200px;
+    position: relative;
+    transition: 0.3s;
+}
+.face{
+    backface-visibility: hidden;
+
+}
+.carta:active{
+    transform: scale(0.97);
+}
+    .carta.virar{
+        transform:rotateY(-180deg);
+    }
+.frente,
+.fundo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.frente{
+    transform: rotateY(180deg);
+}
+.timer{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+body{
+    background-image: url("img/wallpaperbetter.com_1920x1080.jpg");
+}
